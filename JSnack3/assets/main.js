@@ -3,7 +3,7 @@ var numeri = [];
 var somma = 0;
 
 for (var i = 0; i < 5; i++) {
-    var numeri[i] = prompt("Inserisci il " + i + "° numero");
+    numeri[i] = parseInt(prompt("Inserisci il " + (i + 1)  + "° numero"));
     somma = somma + numeri[i];
 }
 
