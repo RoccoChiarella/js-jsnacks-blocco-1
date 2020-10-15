@@ -1,12 +1,14 @@
 var numeri = [];
 
-var N = prompt("Di quanti numeri devo fare il cubo?");
+var numeroDaInserire = 0;
 
-var x = "";
+var k = 0;
 
-for (var i = 0; i < N; i++) {
-    numeri[i] = (i + 1) ** 3;
-    x = x + '<span id="cubo'+ (i+1) +'">'+ numeri[i] +' </span>';
+for (var i = 0; i < 6; i++) {
+    numeroDaInserire = parseInt(prompt("Inserisci il " + (i + 1)  + "° numero"));
+    if (numeroDaInserire % 2) {
+        numeri[k] = numeroDaInserire;
+        console.log(numeri[k]);
+        k++;
+    }
 }
-
-document.getElementById('cubi').innerHTML = x;
